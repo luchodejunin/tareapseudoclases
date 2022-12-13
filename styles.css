@@ -1,0 +1,27 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: min(500px,80%);
+    height: min(500px,90%);
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+}
+.container:hover :nth-child(3),.container:hover :nth-child(6),.container:hover :nth-child(9){
+    background-color:  red;
+}
+span{
+    display: block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: green;
+    
+}
